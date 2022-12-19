@@ -1,0 +1,138 @@
+:root {
+  --light-text: #222;
+  --light-secondary: #fff;
+  --accent: #3c87ce;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.2s ease 0s;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: var(--light-text);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 5px;
+  color: var(--light-text);
+}
+
+img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-text);
+  font-size: 1rem;
+  font-weight: 400px;
+  box-shadow: 2px 2px 5px #00315e;
+}
+
+.btn {
+  width: 100%;
+  padding: 1.2rem;
+  text-align: center;
+  margin: 0.75rem 0;
+  background-color: var(--light-secondary);
+  color: var(--light-text);
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0px 15px 20px rgba(33, 43, 90, 0.4);
+  transform: translateY(-7px);
+  background-color: var(--accent);
+  color: var(--light-secondary);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+
+button {
+  border: none;
+  background: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: var(--light-secondary);
+  color: var(--moon);
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border: 2px solid var(--moon);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f4fb;
+    color: #333;
+  }
+  main {
+    width: 90%;
+  }
+  i {
+    font-size: 1.2rem;
+  }
+  p {
+    color: var(--light-text);
+  }
+  .card > p {
+    font-size: 12px;
+  }
+}
